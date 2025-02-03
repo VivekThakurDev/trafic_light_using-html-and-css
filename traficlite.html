@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main_body{
+            height: 800px;
+            width: 100%;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .outer_class{
+            height:250px;
+            width: 93px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 33px;
+            background-color: black;
+        }
+        .name{
+            margin: 25px 0px 0px 0px;
+            height: 22px;
+            width: 60px;
+            
+        }
+        p{
+          
+        }
+        .stand{
+            height: 257px;
+            width: 30px;
+            border: 2px solid;
+            border-radius: 0px 0px 14px 14px;
+            background-color: #000000cc;
+        }
+        .color_red{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin: 7px 0px 0px 0px;
+            animation: redlight 15s infinite;
+            background-color:#300;
+        }
+        .color_yellow{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            animation: yellowlight 15s infinite;
+            background-color: #430;
+        }
+        .color_green{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin: 0px 0px 7px 0px;
+            animation:greenlight 15s infinite;
+            background-color: #030;
+        }
+        
+        @keyframes redlight
+        {
+            0%{
+                background: #300;
+            }
+            55%{
+                background: #300;
+            }
+            65%{
+                background: #f00;
+            }
+            95%{
+                background: #f00;
+            }
+            100%{
+                background: #300;
+            }
+        }
+        @keyframes yellowlight
+        {
+            0%{
+                background: #430;
+            }
+            45%{
+                background: #430;
+            }
+            55%{
+                background: #fc0;
+            }
+            80%{
+                background: #430;
+            }
+            100%{
+                background: #430;
+            }
+        }
+        
+        @keyframes greenlight
+        {
+            0%{
+                background: #030;
+            }
+            55%{
+                background: #0a0;
+            }
+            65%{
+                background: #0a0;
+            }
+            95%{
+                background: #030;
+            }
+            100%{
+                background: #030;
+            }
+        }
+        
+        .color_green,.color_yellow,.color_red{
+            animation-duration: 5s;
+        }</style>
+    <link rel="stylesheet" href="traffic_lite.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="main_body">
+    <h1>traffic Light</h1>
+    <div class="outer_class"> 
+        <div class="name">
+            <p>traffic Light</p>
+        </div>
+        <div class="color_red"></div>
+        <div class="color_yellow"></div>
+        <div class="color_green"></div>
+    </div>
+    <div class="stand"></div>
+   </div>
+
+</body>
+</html>
